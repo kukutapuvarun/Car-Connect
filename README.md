@@ -1,6 +1,8 @@
-# [Car-Connect Website] (https://cars-connect.netlify.app)
+# [Car-Connect Website](https://cars-connect.netlify.app)
 
 ## Overview
+
+Link to the Website - https://cars-connect.netlify.app
 
 This repository contains the source code for a car selling website developed using JavaScript, HTML, and CSS. This website aims to provide a platform for users to browse, search, and purchase cars online. It includes features such as a catalog of available cars, detailed car listings, search functionality, and a user-friendly interface.
 
