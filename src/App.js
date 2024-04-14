@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+let search = document.querySelector('.search-box');
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+document.querySelector('#search-icon').onclick = () => {
+  search.classList.toggle('active');
+  menu.classList.remove('active');
 }
 
-export default App;
+let menu = document.querySelector('.navbar');
+
+document.querySelector('#menu-icon').onclick = () => {
+  menu.classList.toggle('active');
+  search.classList.remove('active');
+}
+//hide menu and search on scroll
+window.onscroll = () => {
+  search.classList.remove('active');
+  menu.classList.remove('active');
+}
+
+//header
+let header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  header.classList.toggle('shadow', window.scrollY > 0);
+})

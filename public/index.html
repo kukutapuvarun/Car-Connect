@@ -1,43 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Dealership</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- link to box -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- navbar -->
+  <header>
+    <!-- new container -->
+    <div class="nav container">
+      <!-- menu icon -->
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <!-- logo -->
+      <a href="#" class="logo">Car<span>Connect</span></a>
+      <!-- Nav List -->
+      <ul class="navbar">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#parts">Parts</a></li>
+        <li><a href="#blog">Our Blog</a></li>
+      </ul>
+      <!-- Search icon -->
+      <i class='bx bx-search' id="search-icon"></i>
+      <!-- search box -->
+      <div class="search-box container">
+        <input type="search" name="" id="" placeholder="Search Cars">
+      </div>
+    </div>
+  </header>
+  <!-- home -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1>We Have Everithing<br>Your <span>Car </span>Need</h1>
+      <p>Lorem ipsum dolor sit amet consectetur <br>adipiscing elit, sed do eiusmod tempor </p>
+      <!-- home button -->
+      <a href="#" class="btn">Discover Now</a>
+    </div>
+  </section>
+  <!-- cars section-->
+  <section class="cars">
+    <div class="heading">
+      <span>All Cars</span>
+      <h1>We have all types of Cars</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+    </div>
+    <div class="cars-container container">
+      <!-- Box 1 -->
+      <div class="box">
+        <img src="img/car1.jpg" alt="">
+        <h2>Porche car</h2>
+      </div>
+      <!-- Box 2 -->
+      <div class="box">
+        <img src="img/car2.jpg" alt="">
+        <h2>Audi car</h2>
+      </div>
+      <!-- Box 3 -->
+      <div class="box">
+        <img src="img/car3.jpg" alt="">
+        <h2>Audi car</h2>
+      </div>
+      <!-- Box 4 -->
+      <div class="box">
+        <img src="img/car4.jpg" alt="">
+        <h2>Audi car</h2>
+      </div>
+      <!-- Box 5 -->
+      <div class="box">
+        <img src="img/car5.jpg" alt="">
+        <h2>Audi car</h2>
+      </div>
+      <!-- Box 6 -->
+      <div class="box">
+        <img src="img/car6.jpg" alt="">
+        <h2>Audi car</h2>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="about container" id="about">
+    <div class="about-img">
+      <img src="img/about.png" alt="">
+    </div>
+      <div class="about-text">
+      <span>About Us</span>
+      <h2>Cheap Prices With <br>Quality Cars</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis placeat quisquam deleniti! Maxime nisi ad, ipsam sunt </p>
+      <!-- About button -->
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+  <!-- Parts section -->
+  <section class="parts" id="parts">
+  <div class="heading">
+    <span>What We Offer</span>
+    <h2>Our car is Always Exellent</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, commodi sapiente? Exercitationem officiis eaque quibusdam, nam reiciendis veritatis, iste, </p>
+  </div>
+  <!-- parts container -->
+  <div class="parts-container container">
+    <!-- Box 1 -->
+    <div class="box">
+      <img src="img/part1.png" alt="">
+      <h3>Auto Spare Parts</h3>
+      <span>$120.99</span>
+      <i class='bx bxs-star'>(5 Reviews)</i>
+      <a href="#" class="btn">Buy Now</a>
+      <a href="#" class="details">View Details</a>
+    </div>
+    <!-- Box 2 -->
+    <div class="box">
+      <img src="img/part2.png" alt="">
+      <h3>Auto Spare Parts</h3>
+      <span>$120.99</span>
+      <i class='bx bxs-star'>(5 Reviews)</i>
+      <a href="#" class="btn">Buy Now</a>
+      <a href="#" class="details">View Details</a>
+    </div>
+    <!-- Box 3 -->
+    <div class="box">
+      <img src="img/part3.png" alt="">
+      <h3>Auto Spare Parts</h3>
+      <span>$120.99</span>
+      <i class='bx bxs-star'>(5 Reviews)</i>
+      <a href="#" class="btn">Buy Now</a>
+      <a href="#" class="details">View Details</a>
+    </div>
+    <!-- Box 4 -->
+    <div class="box">
+      <img src="img/part4.png" alt="">
+      <h3>Auto Spare Parts</h3>
+      <span>$120.99</span>
+      <i class='bx bxs-star'>(5 Reviews)</i>
+      <a href="#" class="btn">Buy Now</a>
+      <a href="#" class="details">View Details</a>
+    </div>
+    <!-- Box 5 -->
+    <div class="box">
+      <img src="img/part5.png" alt="">
+      <h3>Auto Spare Parts</h3>
+      <span>$120.99</span>
+      <i class='bx bxs-star'>(5 Reviews)</i>
+      <a href="#" class="btn">Buy Now</a>
+      <a href="#" class="details">View Details</a>
+    </div>
+    <!-- Box 6 -->
+    <div class="box">
+      <img src="img/part6.png" alt="">
+      <h3>Auto Spare Parts</h3>
+      <span>$120.99</span>
+      <i class='bx bxs-star'>(5 Reviews)</i>
+      <a href="#" class="btn">Buy Now</a>
+      <a href="#" class="details">View Details</a>
+    </div>
+  </div>
+</section>
+<!-- Blog Container -->
+<section class="blog" id="blog">
+  <div class="heading">
+    <span>Blog & News</span>
+    <h2>Our Blog Content</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, accusantium laboriosam non voluptate fuga </p>
+  </div>
+  <!-- Blog container -->
+  <div class="blog-container container">
+    <!-- Box 1 -->
+    <div class="box">
+      <img src="img/car1.jpg">
+      <span>Feb 14 2021</span>
+      <h3>How to get perfect car at low price</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+    <!-- Box 2 -->
+    <div class="box">
+      <img src="img/car2.jpg">
+      <span>Feb 14 2021</span>
+      <h3>How to get perfect car at low price</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+    <!-- Box 3 -->
+    <div class="box">
+      <img src="img/car3.jpg">
+      <span>Feb 14 2021</span>
+      <h3>How to get perfect car at low price</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+    <!-- Box 4 -->
+    <div class="box">
+      <img src="img/car4.jpg">
+      <span>Feb 14 2021</span>
+      <h3>How to get perfect car at low price</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+    <!-- Box 5 -->
+    <div class="box">
+      <img src="img/car5.jpg">
+      <span>Feb 14 2021</span>
+      <h3>How to get perfect car at low price</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+    <!-- Box 6 -->
+    <div class="box">
+      <img src="img/car6.jpg">
+      <span>Feb 14 2021</span>
+      <h3>How to get perfect car at low price</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+  </div>
+</section>
+<!-- Fotter -->
+<section class="footer">
+  <div class="footer-container container">
+    <div class="footer-box">
+      <a href="#" class="logo">Car<span>Connect</span></a>
+      <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-youtube'></i></a>
+      </div>
+    </div>
+    <div class="footer-box">
+      <h3>Page</h3>
+      <a href="#">Home</a>
+      <a href="#">Cars</a>
+      <a href="#">Parts</a>
+      <a href="#">Sales</a>
+    </div>
+    <div class="footer-box">
+      <h3>Legal</h3>
+      <a href="#">Privacy</a>
+      <a href="#">Refund Policy</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>United States</p>
+      <p>Japan</p>
+      <p>Germany</p>
+    </div>
+  </div>
+</section>
+<!-- copyright -->
+<div class="copyright">
+  <p>&#169; VarunKumar All Rights Reserved</p>
+</div>
+<!-- link to js -->
+<script src="App.js"></script>
+</body>
 </html>
