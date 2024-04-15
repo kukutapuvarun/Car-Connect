@@ -122,7 +122,7 @@ header.shadow #search-icon {
     font-size: 1rem;
 }
 .home {
-    max-width: 1346px;
+    max-width: 1416px;
     margin: auto;
     width: 100%;
     min-height: 640px; 
@@ -271,6 +271,7 @@ header.shadow #search-icon {
     position: absolute;
     bottom: 1.8rem;
     right: 1rem;
+    color: var(--main-colour);
     font-size: var(--text-color);
 }
 .parts-container .box .details:hover{
