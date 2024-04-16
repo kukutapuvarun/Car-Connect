@@ -388,6 +388,9 @@ header.shadow #search-icon {
     .home-text h1{
         font-size: 2.1rem;
     }
+    .home p{
+        color: var(--bg-color);
+    }
 }
 @media (max-width: 768px){
     #search-icon{
