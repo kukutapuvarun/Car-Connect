@@ -379,6 +379,9 @@ header.shadow #search-icon {
     section{
         padding: 3rem 0 1rem;
     }
+    .home{
+        background-image: url(img/car6.jpg);
+    }
     .home-text{
         padding-left: 2rem;
     }
@@ -410,6 +413,7 @@ header.shadow #search-icon {
         row-gap: center;
         clip-path: circle(0% at 0% 0%);
         transition: 0.6;
+        color: var(--main-colour);
     }
     .navbar a{
         display: block;
