@@ -152,6 +152,7 @@ header.shadow #search-icon {
     background: var(--main-colour);
     color: var(--bg-color);
     font-weight: 400;
+    border-radius: 0.5rem;
 }
 .btn:hover{
     background: #fd052f;
