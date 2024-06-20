@@ -1,4 +1,7 @@
-# [Car-Connect Website](https://cars-connect.netlify.app)
+# [Car-Connect](https://cars-connect.netlify.app)
+
+![Design](https://github.com/kukutapuvarun/Car-Connect/assets/96646685/b7a26536-5d65-4fbc-a288-365bd667d4f8)
+
 
 ## Overview
 
@@ -43,6 +46,7 @@ To run the car selling website locally on your machine, follow these steps:
 
 
 Note: If your default branch is named something other than `main`, replace `main` with your branch name.
+Note: This is not My design
 
 8. **Verify on GitHub**: Refresh your GitHub repository page, and you should see your files listed there.
 
